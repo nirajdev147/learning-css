@@ -22,3 +22,19 @@ button{
 a{
     margin-right: 200px;
 }
+
+.contentBox{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    display: inline-block;
+}
+#content{
+    height: 630px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
