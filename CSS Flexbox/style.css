@@ -1,0 +1,314 @@
+/* .flex-container{
+    background-color: black;
+    height: 300px;
+    display: flex;
+} */
+
+
+/* .flex-container >div{
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+    padding: 20px;
+    background-color: white;
+    font-size: 30px;
+    margin: 10px;
+} */
+
+/* ----------------------------------------CSS Flexbox------------------------------------------*/
+
+/* 
+Flexbox is short for the Flexible Box Layout module.
+
+Flexbox is a layout method for arranging items in rows or columns.
+
+Flexbox makes it easier to design a flexible responsive layout structure, without using float or positioning.
+
+
+A flexbox always consists of:
+
+Flex Container - the parent (container) <div> element
+
+Flex Items - the items inside the container <div
+
+ */
+
+
+
+
+/* ----------------------------------CSS flex-direction property-------------------------------------*/
+
+/* The flex-direction property specifies the display-direction of flex items in the flex container.
+
+The flex-direction property can have one of the following values: */
+
+/* .flex-container{
+    flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse; 
+    flex-flow: row wrap; --->Shorthand property for setting both flex-direction and flex-wrap 
+} */
+
+
+
+
+
+/* ----------------------------------CSS flex-direction property-------------------------------------*/
+
+/* The flex-wrap property specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line.
+
+The flex-wrap property can have one of the following values: */
+
+
+/* .flex-container{
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+} */
+
+
+
+
+
+/* ----------------------------------CSS Justify-content property-------------------------------------*/
+
+
+/* The justify-content property is used to align the flex items when they do not use all available space on the main-axis (horizontally).
+
+The justify-content property can have one of the following values: */
+
+/* .flex-container{
+    justify-content: center;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+} */
+
+
+
+
+
+
+/* ----------------------------------CSS align-items property-------------------------------------*/
+
+/* The align-items property is used to align the flex items when they do not use all available space on the cross-axis (vertically).
+
+The align-items property can have one of the following values: */
+
+
+/* .flex-container{
+    align-items: center;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: stretch; 
+    align-items: baseline;
+    align-items: normal;
+} */
+
+
+
+
+
+/* ----------------------------------------CSS align-content property------------------------------------------*/
+
+/* The align-content property is used to align the flex lines.
+
+The align-content property is similar to align-items, but instead of aligning flex items, it aligns the flex lines.
+
+The align-content property can have one of the following values: */
+
+
+
+/* .flex-container{
+    align-content: center;
+    align-content: stretch;
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly; 
+}
+
+ */
+
+
+
+ /* ----------------------------------------CSS Flex items------------------------------------------*/
+
+
+ /* The direct child elements of a flex container automatically becomes flex items. 
+ 
+ 
+ The CSS properties we use for flex items are:
+
+    order
+    flex-grow
+    flex-shrink
+    flex-basis
+    flex
+    align-self
+
+ */
+
+
+
+
+ /* ----------------------------------------CSS order property------------------------------------------*/
+
+
+ /* The order property specifies the order of the flex items inside the flex container.
+
+The first flex item in the code does not have to appear as the first item in the layout.
+
+The order value must be a number, default value is 0. */
+
+
+
+/* .item1{
+    order: 3;
+}
+.item2{
+    order: 2;
+}
+.item3{
+    order: 1;
+}
+.item4{
+    order: 4;
+} */
+
+
+
+
+
+
+  /* ----------------------------------------CSS flex-grow property------------------------------------------*/
+
+  /* The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items.
+
+  The value must be a number, default value is 0. */
+
+
+  /* .item1{
+    flex-grow: 2;
+  }
+  .item2{
+    flex-grow: 3;
+  }
+  .item3{
+    flex-grow: 4;
+  }
+  .item4{
+    flex-grow: 6;
+  }
+
+ */
+
+
+
+ /* ----------------------------------------CSS flex-shrink property------------------------------------------*/
+
+ /* The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items.
+
+ The value must be a number, default value is 1.
+ */
+
+ /* .item1, .item2, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12{
+    flex-shrink: 0;
+ }
+ 
+ .item3{
+    flex-shrink: 1;   
+ }
+ */
+
+
+
+ /* ----------------------------------------CSS flex-basis property------------------------------------------*/
+
+ /* The flex-basis property specifies the initial length of a flex item. */
+
+
+ /* .item2, .item4{
+    flex-basis: 200px;
+ }
+ */
+
+
+
+/* ----------------------------------------CSS flex property------------------------------------------*/
+
+/* The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties. */
+
+
+/* .item2{
+    flex: 0 0 600px;
+} */
+
+
+/* ----------------------------------------CSS flex property------------------------------------------*/
+
+/* The align-self property specifies the alignment for the selected item inside the flexible container.
+
+The align-self property overrides the default alignment set by the container's align-items property. */
+
+
+/* .item1, .item4{
+    align-self: center;
+}
+
+.item2{
+    align-self: flex-start;
+}
+
+.item3{
+    align-self: flex-end;
+} */
+
+
+
+/*-----------------------------------------Responsive Image gallery-------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+
+  .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  .column{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+
+  .column img{
+    width: 100%;
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+
+  @media screen and (max-width: 600px){
+    .column{
+        flex: 100%;
+        width: 100%;
+    }
+  }
