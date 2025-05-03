@@ -1,0 +1,170 @@
+
+
+  /*----------------------------CSS Grid Layout-------------------------------------*/
+
+/* The Grid Layout module offers a grid-based layout system, with rows and column.
+
+The Grid Layout Module allows developers to easily create complex web layouts.
+
+The Grid Layout Module makes it easier to design a responsive layout structure, without using float or positioning.
+
+The CSS grid properties are supported in all modern browsers.
+
+--> The CSS Grid Layout should be used for two-dimensional layout, with rows AND columns.
+
+A grid always consists of:
+
+Grid Container - the parent (container) <div> element
+Grid Items - the items inside the container <div>
+
+*/
+
+
+
+ /*-----------------------------------------Display Grid Property-------------------------------------------*/
+
+ /* The <div> element becomes a grid container when its display property is set to grid or inline-grid. */
+ 
+ .grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+ 
+/* 
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-column: 1 / span 2;   // shorthand property for the grid-column-start and the grid-column-end
+  } */
+
+
+  /* .item1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-row: 1 / span 2;      // shorthand property for the grid-row-start and the grid-row-end
+  } */
+
+
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  /* .grid-container{
+    align-content: start;
+    align-content: end;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly;
+  } */
+
+  /* .grid-container{
+    align-items: center;
+    align-items: start;
+  } */
+
+
+  /*------------------------Grid Property --------------------------*/
+
+  /* The grid property is a shorthand property for:
+
+    grid-template-rows
+    grid-template-columns
+    grid-template-areas
+    grid-auto-rows
+    grid-auto-columns
+    grid-auto-flow
+
+*/
+
+
+/* .grid-container{
+    grid-template-rows: auto auto;
+} */
+
+
+/* .grid-container{
+    grid-template-columns:auto auto auto ;
+  } */
+
+
+
+  
+/* The grid-area property is a shorthand property for the grid-row-start, grid-column-start, grid-row-end and the grid-column-end properties.
+
+The syntax is grid-row-start / grid-column-start / grid-row-end / grid-column-end.
+ */
+
+
+/* 
+ The grid-area property can also be used to assign names to grid items.
+
+The named grid items can then be referred to by the grid-template-areas property of the grid container. */
+
+
+   /* .grid-container{
+    grid-template-areas: 
+    'myArea myArea . . .'
+    'myArea myArea . . .';
+  } */
+   
+
+ /* .item3 {
+     grid-column: auto / span 2;
+ } */
+
+
+  /* .item1{
+    grid-area: myArea;
+  } */
+
+
+ /*----------------------Cell Sizing with the fr Unit---------------------------*/
+
+ /* The fr unit can be used when defining grids, like any other CSS length such as %, px or em.
+
+The fr unit stands for "fraction". 
+
+This unit automatically divides the available space into fractions.
+
+
+Example:-
+         1fr will take 1 fraction of the available space, while 
+         
+         2fr will take 2 fractions of the available space.
+        
+*/
+
+/* .grid-container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+} */
+
+/* 
+.grid-container{
+    grid-template-rows: 80px 200px;
+} */
+
+
+
+/* The grid-area property can also be used to define the order of the grid items.
+
+The first grid item in the HTML code does not have to appear as the first item in the grid.
+ */
+
+
+ /* place in row 1 column 3 */
+
+/* .item1 {grid-area: 1 / 3;}
+.item2{grid-area: 2 / 3;}
+.item3{grid-area: 3 / 3;}
+.item4{grid-area: 4 / 2;}
+.item5{grid-area: 5 / 2;}
+.item6{grid-area: 6 / 2;}
+.item7{grid-area: 7 / 1;}
+.item8{grid-area: 8 / 1;} */
